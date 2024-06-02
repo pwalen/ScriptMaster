@@ -40,7 +40,7 @@ def create_df(headers, test):
         headers[3]: np.random.randint(1300, 1400, size=10),        
     }
     df = pd.DataFrame(data)
-    df.to_csv(f'{test}.csv', index=False)
+    df.to_csv(f'random_csv_folder/{test}.csv', index=False)
 
 for test in test_names:
     create_df(headers, test)
